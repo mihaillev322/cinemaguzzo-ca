@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script>if(location.hostname==="cinemaguzzo.pages.dev"){location.replace("https://cinemaguzzo.ca"+location.pathname+location.search)}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ: Static SEO, Clean URLs, and No-JS Content Strategy</title>
+<meta name="description" content="Answers on static SEO, clean URLs, tables, schema, and authority links for US niche sites—built without JavaScript or images.">
+<link rel="canonical" href="https:///faq">
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="FAQ: Static SEO, Clean URLs, and No-JS Content Strategy">
+<meta property="og:description" content="Answers on static SEO, clean URLs, tables, schema, and authority links for US niche sites—built without JavaScript or images.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https:///faq">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FAQ: Static SEO, Clean URLs, and No-JS Content Strategy">
+<meta name="twitter:description" content="Answers on static SEO, clean URLs, tables, schema, and authority links for US niche sites—built without JavaScript or images.">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<div class="site-name"></div>
+<nav aria-label="Main navigation">
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/faq" aria-current="page">FAQ on static SEO</a></li>
+<li><a href="/about-us">About our method</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<nav aria-label="Breadcrumb" class="breadcrumb container">
+<ol>
+<li><a href="/">Home</a></li>
+<li aria-current="page">FAQ</li>
+</ol>
+</nav>
+<article class="container">
+<header>
+<h1>FAQ on static SEO for US niche websites (no JavaScript)</h1>
+</header>
+<p>This frequently asked questions page addresses common implementation concerns for building static, accessible niche websites targeting United States audiences. Each question explores practical techniques for achieving strong search visibility without relying on JavaScript or external images. The answers draw from established web standards and authoritative guidance to help you build sites that perform well in search results while maintaining accessibility compliance.</p>
+<section class="faq-section">
+<h2>Common questions about static site SEO</h2>
+<details>
+<summary>How do clean URLs work if the files are index.html and faq.html?</summary>
+<div class="details-content">
+<p>Clean URLs are achieved through server-side configuration rather than client-side JavaScript. When you request a URL like <code>/faq</code>, the web server maps this request to the appropriate file, either <code>faq.html</code> in the root directory or <code>/faq/index.html</code> in a subdirectory structure. This mapping happens entirely on the server before any content reaches the browser.</p>
+<p>For static hosting platforms like Netlify, Vercel, GitHub Pages, or traditional Apache and Nginx servers, you configure URL rewrites in platform-specific configuration files. On Apache, you use <code>.htaccess</code> rules with <code>RewriteEngine</code> directives. On Nginx, you configure <code>try_files</code> directives in the server block. Cloud platforms typically provide a <code>_redirects</code> file or <code>vercel.json</code> configuration for the same purpose.</p>
+<p>The key principle is that clean URLs are a server routing concern, not a browser concern. Your HTML files can be named conventionally, and the server handles presenting them at user-friendly URLs. This approach requires no JavaScript and works identically for search engine crawlers and human visitors. For more details on URL structure best practices, consult the documentation for your specific hosting platform or review general guidance in resources like the <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" rel="noopener">Google Search Central structured data guidelines</a>.</p>
+<p>When implementing clean URLs, ensure your internal links use the clean format (e.g., <code>/faq</code> rather than <code>/faq.html</code>) for consistency. Also verify that your canonical URLs match the clean URL format to avoid duplicate content signals. You can learn more about our editorial approach on the <a href="/about-us">About us</a> page.</p>
+</div>
+</details>
+<details>
+<summary>Why require a semantic table on every page?</summary>
+<div class="details-content">
+<p>Semantic tables serve multiple critical functions for both accessibility and search optimization. First, tables provide a scannable format that allows users to quickly compare information across multiple dimensions. Research consistently shows that users scan web content rather than reading linearly, and well-structured tables support this behavior by organizing data into predictable rows and columns.</p>
+<p>From an accessibility perspective, properly marked-up tables enable screen reader users to navigate data efficiently. The <a href="https://www.w3.org/WAI/tutorials/tables/" rel="noopener">W3C WAI Tables Tutorial</a> provides comprehensive guidance on implementing accessible tables. Key requirements include using <code>&lt;caption&gt;</code> elements to describe the table's purpose, <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> to distinguish headers from data, and <code>scope</code> attributes on header cells to establish relationships between headers and data cells.</p>
+<p>For search engines, tables represent structured data that can be parsed and understood programmatically. While tables alone do not guarantee rich results, they provide clear signals about the relationships between data points on your page. This structured presentation can improve how search engines understand and potentially feature your content.</p>
+<p>The requirement for at least one table per page ensures that every page offers some structured, comparative, or reference information rather than consisting entirely of prose paragraphs. This constraint encourages content creators to think about what data would genuinely help users and present it in the most accessible format.</p>
+</div>
+</details>
+<details>
+<summary>How do I keep keyword density at 1–2% naturally?</summary>
+<div class="details-content">
+<p>Achieving natural keyword density requires strategic placement rather than mechanical repetition. The most effective approach focuses on including your primary keyword in high-value positions: the H1 heading, the first paragraph of body content, one or two H2 subheadings, and the table caption if your page includes tabular data. These positions carry significant weight for search relevance while appearing natural to readers.</p>
+<p>Beyond these anchor positions, use synonyms, related terms, and natural variations throughout your content. If your primary keyword is "static site SEO," related terms might include "no-JavaScript optimization," "semantic HTML for search," or "accessible web content." This approach satisfies search engines' understanding of topical relevance while avoiding the robotic repetition that characterizes keyword stuffing.</p>
+<p>To calculate density, divide keyword occurrences by total word count and multiply by 100. For a 1,000-word page targeting 1.5% density, you would include your primary keyword approximately 15 times. However, this should never feel forced—if natural writing produces 12 occurrences or 18 occurrences, both are acceptable. The goal is a range, not a precise target.</p>
+<p>Avoid common stuffing patterns: repeating keywords in every paragraph opening, creating unnatural lists of keyword variations, or hiding keywords in metadata that does not match visible content. Search engines have sophisticated detection for these patterns, and they can result in ranking penalties. For more guidance on content optimization, <a href="/">return to the homepage</a> and review the workflow section.</p>
+</div>
+</details>
+<details>
+<summary>What authority links count, and how many do I need?</summary>
+<div class="details-content">
+<p>Authority links are outbound links to sources that establish credibility and provide additional context for your claims. The most valuable authority sources include government websites (.gov domains like CDC, NIH, Census Bureau, or state agencies), educational institutions (.edu domains), established non-profit organizations (.org domains with recognized expertise), Wikipedia for general reference, and major news organizations with editorial standards.</p>
+<p>For US-focused niche sites, particularly valuable sources include the Centers for Disease Control and Prevention (CDC) for health topics, the National Institutes of Health (NIH) for medical research, the US Census Bureau for demographic data, the Federal Trade Commission (FTC) for consumer protection guidance, and state-specific regulatory agencies for local compliance information.</p>
+<p>The minimum requirements vary by page type: homepage and pillar content should include at least three authority links to establish site-wide credibility, while inner pages and supporting content should include at least two. These links should be contextual citations that support specific claims rather than generic link lists at the bottom of pages.</p>
+<p>When linking to authority sources, use descriptive anchor text that indicates what the user will find. For example, "according to <a href="https://en.wikipedia.org/wiki/JSON-LD" rel="noopener">Wikipedia's JSON-LD documentation</a>" is more useful than "click here for more information." The nofollow attribute is not required for authority links but is acceptable if your editorial policy prefers it. What matters most is relevance and genuine citation value.</p>
+</div>
+</details>
+<details>
+<summary>How do details and summary accordions help without JavaScript?</summary>
+<div class="details-content">
+<p>The HTML5 <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements provide native disclosure widget functionality without any JavaScript requirement. When a user clicks or activates a summary element, the browser automatically toggles the visibility of the details content. This behavior is built into all modern browsers and works identically for mouse, keyboard, and touch interactions.</p>
+<p>For keyboard accessibility, users can focus on the summary element using Tab navigation and toggle it open or closed using Enter or Space keys. Screen readers announce the expanded or collapsed state, allowing users to understand the current status and available interaction. This native accessibility support exceeds what many JavaScript accordion implementations provide.</p>
+<p>Styling details and summary elements requires attention to the default disclosure marker (typically a triangle). You can customize or replace this marker using the <code>::marker</code> pseudo-element or by hiding it and creating custom indicators with CSS. Focus states should use <code>:focus-visible</code> to provide clear visual indication for keyboard users without affecting mouse users.</p>
+<p>For users who have enabled reduced motion preferences in their operating system, avoid animated transitions when expanding or collapsing details content. Use the <code>prefers-reduced-motion</code> media query to disable or minimize animations for these users. A simple approach is to use instant visibility changes rather than height transitions when reduced motion is preferred.</p>
+</div>
+</details>
+<details>
+<summary>What schema should I add and where?</summary>
+<div class="details-content">
+<p>Schema.org structured data helps search engines understand your content's type and purpose. For a typical niche site, recommended schema types include Organization for the homepage (establishing your site's identity), FAQPage for FAQ content (enabling potential rich results), and AboutPage for your about section (clarifying your site's purpose and editorial standards).</p>
+<p>The standard implementation method for schema is JSON-LD (JavaScript Object Notation for Linked Data) placed within a <code>&lt;script type="application/ld+json"&gt;</code> tag in the document head. However, since this site prohibits all script tags to maintain a truly static, no-JavaScript approach, we cannot embed JSON-LD in the conventional manner.</p>
+<p>As an alternative, we provide JSON-LD code in visible <code>&lt;pre&gt;</code> blocks that you can copy and paste into your own implementation if your constraints differ. This approach documents the recommended schema while respecting the no-script requirement. If you control your hosting environment and can use script tags, simply copy the JSON-LD from the pre block into a properly typed script element.</p>
+<p>For validation, use Google's Rich Results Test or Schema.org's validator to verify your JSON-LD syntax before deployment. Common errors include missing required properties, incorrect nesting, and mismatched types. The <a href="https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data" rel="noopener">Google Search Central structured data documentation</a> provides detailed guidance on implementation and testing.</p>
+</div>
+</details>
+</section>
+<section>
+<h2>FAQ implementation checklist</h2>
+<p>The following table summarizes the key requirements for implementing FAQ pages on static niche sites, including validation methods and common mistakes to avoid.</p>
+<div class="table-wrapper">
+<table>
+<caption>FAQ implementation checklist</caption>
+<thead>
+<tr>
+<th scope="col">Requirement</th>
+<th scope="col">Where it appears</th>
+<th scope="col">How to validate</th>
+<th scope="col">Common pitfall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Semantic details/summary markup</td>
+<td>Each FAQ question-answer pair</td>
+<td>HTML validator, manual DOM inspection</td>
+<td>Using divs with JavaScript instead of native elements</td>
+</tr>
+<tr>
+<td>Keyboard accessibility</td>
+<td>All interactive summary elements</td>
+<td>Tab through page, test Enter/Space activation</td>
+<td>Missing focus styles or broken tab order</td>
+</tr>
+<tr>
+<td>Screen reader compatibility</td>
+<td>Summary announcements and state changes</td>
+<td>Test with NVDA, VoiceOver, or JAWS</td>
+<td>Custom implementations lacking ARIA states</td>
+</tr>
+<tr>
+<td>Minimum word count per answer</td>
+<td>Content within each details element</td>
+<td>Word count tool on expanded content</td>
+<td>Thin answers that do not fully address questions</td>
+</tr>
+<tr>
+<td>Internal linking</td>
+<td>Within answer content where relevant</td>
+<td>Manual link audit, broken link checker</td>
+<td>Orphaned pages with no incoming links</td>
+</tr>
+<tr>
+<td>External authority links</td>
+<td>Citations within answers (minimum 2 per page)</td>
+<td>Link audit for domain authority</td>
+<td>Linking to low-quality or irrelevant sources</td>
+</tr>
+<tr>
+<td>Reduced motion support</td>
+<td>CSS media query for transitions</td>
+<td>Enable reduced motion in OS, test page</td>
+<td>Ignoring user motion preferences</td>
+</tr>
+<tr>
+<td>Breadcrumb navigation</td>
+<td>Above main content, below header</td>
+<td>Visual inspection, screen reader test</td>
+<td>Missing aria-label or incorrect hierarchy</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section>
+<h2>Additional resources and next steps</h2>
+<p>This FAQ covers the most common questions about implementing static SEO for US niche websites. For a comprehensive overview of the keyword research and content brief workflow, <a href="/">return to the homepage</a> where you will find detailed tables mapping search intent to page structures and a step-by-step content creation process.</p>
+<p>To understand our editorial standards, sourcing methodology, and quality assurance processes, visit the <a href="/about-us">About us</a> page. There you will find information about how we select authority sources, maintain content accuracy, and approach transparency in our recommendations.</p>
+<blockquote>
+<p>Building accessible, search-optimized content without JavaScript is not a limitation—it is a discipline that forces clarity, semantic precision, and genuine value for users.</p>
+</blockquote>
+</section>
+</article>
+</main>
+<aside class="container schema-aside">
+<h2>Schema.org JSON-LD for this page (copy and paste)</h2>
+<pre>{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do clean URLs work if the files are index.html and faq.html?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clean URLs are achieved through server-side configuration. The web server maps requests like /faq to faq.html or /faq/index.html using rewrite rules."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why require a semantic table on every page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Semantic tables provide scannable formats for users and structured data for search engines while ensuring accessibility through proper markup."
+      }
+    }
+  ]
+}</pre>
+</aside>
+<footer class="site-footer">
+<div class="container">
+<p>© 2026 </p>
+</div>
+</footer>
+</body>
+</html>
